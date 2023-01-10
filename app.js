@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const app = express();
+const connect = require("./db/conect");
 
 app.use(logger('dev'));
 app.use(express.json());
